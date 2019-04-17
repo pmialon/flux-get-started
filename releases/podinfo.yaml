@@ -16,13 +16,13 @@ spec:
   values:
     image:
       repository: quay.io/stefanprodan/podinfo
-      tag: 1.4.4
-      backend: http://backend-podinfo:9898/echo
-      canary:
+      tag: 1.4.0
+    backend: http://backend-podinfo:9898/echo
+    canary:
+      enabled: true
+      istioIngress:
         enabled: true
-        istioIngress:
-          enabled: true
-          gateway: istio-ingressgateway.istio-system.svc.cluster.local
-          host: frontend.istio.example.com
-        loadtest:
-          enabled: true
+        gateway: istio-ingressgateway.istio-system.svc.cluster.local
+        host: frontend.istio.example.com
+      loadtest:
+        enabled: true
