@@ -26,3 +26,4 @@ spec:
         host: frontend.istio.example.com
       loadtest:
         enabled: true
+        url: http://flagger-loadtester.demo/
