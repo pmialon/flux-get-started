@@ -1,3 +1,4 @@
+---
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
@@ -15,7 +16,7 @@ spec:
   values:
     image:
       repository: stefanprodan/podinfo
-      tag: 1.4.0
+      tag: 1.4.4
       backend: http://backend-podinfo:9898/echo
       canary:
         enabled: true
