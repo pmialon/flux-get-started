@@ -9,6 +9,6 @@ metadata:
 spec:
   releaseName: ghost
   chart:
-    git: ssh://git@github.com:pmialon/flux-get-started.git
+    git: https://github.com/helm/helm.git
     ref: master
-    path: charts/nginx
+    path: helm/docs/examples/nginxs
