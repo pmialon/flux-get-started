@@ -7,8 +7,8 @@ metadata:
   annotations:
     flux.weave.works/automated: "false"
 spec:
-  releaseName: ghost
+  releaseName: nginx
   chart:
-    git: https://github.com/helm/helm.git
+    git: https://github.com/pmialon/flux-get-started.git
     ref: master
-    path: docs/examples/nginx
+    path: charts/nginx
