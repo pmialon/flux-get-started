@@ -10,3 +10,6 @@ spec:
     repository: https://flagger.app
     name: loadtester
     version: 0.2.0
+  values:
+    image:
+      repository: weaveworks/flagger-loadtester
