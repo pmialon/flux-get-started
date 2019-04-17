@@ -1,0 +1,14 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: demo-nginx
+  namespace: demo
+  annotations:
+    flux.weave.works/automated: "false"
+spec:
+  releaseName: demo-nginx
+  chart:
+    git: ssh://git@github.com:pmialon/flux-get-started
+    ref: master
+    path: charts/nginx
