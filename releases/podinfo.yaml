@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: frontend
   chart:
-    repository: https://stefanprodan.github.io/flagger/
+    repository: https://flagger.app
     name: podinfo
     version: 2.0.0
   values:
