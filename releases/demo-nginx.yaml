@@ -9,6 +9,6 @@ metadata:
 spec:
   releaseName: demo-nginx
   chart:
-    git: ssh://git@github.com:pmialon/flux-get-started
+    git: ssh://git@github.com/pmialon/flux-get-started
     ref: master
     path: charts/nginx
