@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: quay.io/stefanprodan/podinfo
-      tag: 1.4.0
+      tag: 1.4.1
     backend: http://backend-podinfo:9898/echo
     canary:
       enabled: true
