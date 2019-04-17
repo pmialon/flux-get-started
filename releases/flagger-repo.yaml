@@ -8,9 +8,9 @@ metadata:
 spec:
   releaseName: flagger
   chart:
-    git: git@github.com:weaveworks/flagger
-    path: charts/flagger
-    ref: master
+    repository: https://flagger.app
+    name: flagger
+    version: 0.10.0
   values:
     #    slack:
     #      url: https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK
