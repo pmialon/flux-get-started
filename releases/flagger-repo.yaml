@@ -1,0 +1,17 @@
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: flagger
+  namespace: istio-system
+  annotations:
+    flux.weave.works/automated: "true"
+spec:
+  releaseName: flagger
+  chart:
+    git: git@github.com:weaveworks/flagger
+    path: charts/flagger
+    ref: master
+  values:
+    #    slack:
+    #      url: https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK
+    #      channel: general
