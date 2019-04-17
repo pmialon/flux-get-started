@@ -3,15 +3,9 @@ kind: HelmRelease
 metadata:
   name: flagger
   namespace: istio-system
-  annotations:
-    flux.weave.works/automated: "true"
 spec:
   releaseName: flagger
   chart:
     repository: https://flagger.app
     name: flagger
     version: 0.10.0
-  values:
-    #    slack:
-    #      url: https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK
-    #      channel: general
