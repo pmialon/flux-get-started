@@ -1,0 +1,1 @@
+{"jobID":"059a3cdd-f35a-2c97-651d-f4078061b342","spec":{"type":"policy","cause":{"Message":"","User":"Pierre-Gilles Mialon"},"spec":{"demo:helmrelease/frontend":{"add":{"automated":"true"},"remove":{}}}},"result":null}
