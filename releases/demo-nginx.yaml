@@ -12,3 +12,6 @@ spec:
     git: ssh://git@github.com/pmialon/flux-get-started
     ref: master
     path: charts/nginx
+  values:
+    image:
+      tag: "1234567890"
