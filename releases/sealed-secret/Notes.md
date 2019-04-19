@@ -6,3 +6,5 @@ curl localhost:8080/v1/cert.pem > cert.pem
 
 
 See: https://github.com/bitnami-labs/sealed-secrets#usage
+use version v0.5.1 of kubeseal cli since later version are broken
+
