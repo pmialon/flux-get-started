@@ -1,17 +1,17 @@
 Steps to deploy a k8s Cluster
 
- 1. [optional]
+ * [optional]
  Restore the master.key of the sealedSecret if existing See: [FAQ](https://github.com/bitnami-labs/sealed-secrets#faq) 
  ```
  kubectl replace -f master.key
  ```
-1. [optional]
+ * [optional]
 Restore the secret key for flux stored in secret/flux-git-deploy if existing
  ```
 kubectl replace -f flux-git-deploy.yaml
  ```
-1. Install Tiller
-1. Install Flux
+ * Install Tiller
+ * Install Flux
  ```
 # Tune Flux
 --registry-poll-interval=1m
@@ -21,13 +21,13 @@ kubectl replace -f flux-git-deploy.yaml
 --git-poll-interval=1m-operator
 --charts-sync-interval=1m
  ```
- 1. [optional]
+ * [optional]
 if you didn't apply step 2 get the flux ssh-key
  ```
 fluxctl identity --k8s-fwd-ns flux
  ```
 And put it in the repo with read/write access
-1. [optional]
+ * [optional]
 if you don't already have the sealed-secret key
  ```
 kubectl -n kube-system port-forward deployment/sealed-secrets-controller 8080:8080
