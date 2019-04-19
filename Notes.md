@@ -1,4 +1,4 @@
-Steps to deploy a k8s Cluster
+#Steps to deploy a k8s Cluster
 
  * [optional]
  Restore the master.key of the sealedSecret if existing See: [FAQ](https://github.com/bitnami-labs/sealed-secrets#faq) 
@@ -34,3 +34,13 @@ kubectl -n kube-system port-forward deployment/sealed-secrets-controller 8080:80
 curl localhost:8080/v1/cert.pem > cert.pem
  ```
 use version v0.5.1 of kubeseal cli since later version are broken
+
+# Items to deploy with Flux
+
+ * sealed-secret
+ * Istio
+ * Cert-manager
+ * Flagger
+ 
+ # Write the objective of this project
+ 
