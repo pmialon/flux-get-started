@@ -13,11 +13,11 @@ kubectl replace -f flux-git-deploy.yaml
 1. Install Tiller
 1. Install Flux
  ```
-Tune Flux
+# Tune Flux
 --registry-poll-interval=1m
 --git-poll-interval=1m
 --sync-garbage-collection
-Tune flux-helm-operator
+# Tune flux-helm-operator
 --git-poll-interval=1m-operator
 --charts-sync-interval=1m
  ```
