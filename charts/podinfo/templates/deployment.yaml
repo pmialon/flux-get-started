@@ -21,6 +21,7 @@ spec:
         app: {{ template "podinfo.fullname" . }}
       annotations:
         prometheus.io/scrape: 'true'
+        prometheus.io/scheme: 'http'
         sidecar.istio.io/inject: "true"
     spec:
       terminationGracePeriodSeconds: 30
